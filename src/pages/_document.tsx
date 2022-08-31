@@ -1,6 +1,7 @@
 import Document, {
   DocumentContext,
   Head,
+  Html,
   Main,
   NextScript,
 } from "next/document";
@@ -31,7 +32,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html>
+      <Html>
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -47,7 +48,7 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }

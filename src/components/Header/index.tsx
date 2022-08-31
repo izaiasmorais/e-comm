@@ -3,8 +3,12 @@ import { BiCaretDown } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
 import { FiShoppingCart } from "react-icons/fi";
 import { MdSearch } from "react-icons/md";
+import { useDarkMode } from "../../hooks/useDarkMode";
+import { ToggleButton } from "../ToggleButton/ToggleButton";
 
 export function Header() {
+  const [theme, themeToggler] = useDarkMode();
+
   return (
     <HeaderContainer>
       <div className="header-top">

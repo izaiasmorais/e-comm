@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-  background: ${({ theme }) => theme.colors["base-white"]};
+  background: ${({ theme }) => theme.colors.header};
 
   .header-bottom,
   .header-top {
@@ -31,6 +31,8 @@ export const HeaderContainer = styled.div`
       display: flex;
       align-items: center;
       gap: 2rem;
+
+      
 
       div {
         display: flex;
